@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+/* main */
+
+/* footer */
+footer{
+    background-color: rgba(59, 59, 59, 0.452);
+}
+footer p{
+    margin: 0%;
+}
