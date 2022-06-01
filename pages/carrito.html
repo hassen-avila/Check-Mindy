@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Carrito - Mindy</title>
+    <!-- <link rel="icon" type="image/jpg" href="./images/logo_Mesa_de_trabajo_1.png"/> -->
+    <link rel="icon" type="image/jpg" href="../favicon/favicon.png"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <div class="d-flex justify-content-between p-3 header-pagesContac mb-5">
+          <div class="d-flex">
+            <img src="../images/logo_Mesa_de_trabajo_1.png" style="height: 5rem;" alt="logo">
+          </div>
+          <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                      </a>
+                      <ul class="dropdown-menu dropdown-color" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="../pages/shopToys.html">Juguetes</a></li>
+                        <li><a class="dropdown-item" href="../pages/shopMed.html">Farmacia</a></li>
+                      </ul>
+                    <li class="nav-item">
+                      <a class="nav-link mr" href="../pages/contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item" id="favoritos">
+                    </li>
+                    </li>
+                  </ul>
+              </div>
+            </nav>
+        </div>
+
+      </header>
+
+      <main class="mb-5 cont-carrito d-flex flex-column justify-content-center align-item-center">
+            <div id="shop" class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4 g-4 pt-3 justify-content-center" id="mainCardsFavorite">
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+            <div class="sumaDePrecios" >
+              
+              
+              <div id="sumaCarrito" class="text-center"></div>
+            </div>
+          </div>
+                <div class="d-flex flex-column flex-md-row align-items-center category-color  justify-content-center pb-3 mt-5 Category" id="categorias">
+                  <button  class="eliminar p-2 boton-carrito m-2" id="eliminar" onclick="clearId()">Vaciar Carrito</button>
+                  <button class="finalizar p-2 boton-carrito m-2" id="finalizacompra" onclick="clearId()">Finalizar Compra</button>
+                </div>
+                <div id="total"></div>
+            </div>
+      </main>
+    <footer class="d-block d-xl-flex justify-content-between p-4 align-items-center">
+      <div class="d-flex justify-content-center">
+        <a class="text-redes" target="_blank" href="https://api.whatsapp.com/send/?phone=3513154171&text&app_absent=0"><i class="fa-brands fa-whatsapp fa-3x p-3"></i></a>
+        <a class="text-redes" target="_blank" href="https://www.instagram.com/mindyspetshop"><i class="fa-brands fa-instagram fa-3x p-3"></i></a>
+        <a class="text-redes" target="_blank" href="https://www.facebook.com/MindyPetShop"><i class="fa-brands fa-facebook fa-3x p-3"></i></a>
+      </div>
+      <div>
+          <h6 class="d-flex justify-content-center">Horarios</h6>
+          <p class="text-center">Lunes a Sabado 9:00 a 13:00 y 15:00 a 20:00</p>
+          <p class="text-center">Domingos y feriados cerrado</p>
+          <p class="text-center">Rio de Janeiro 300 - Caballito - Buenos Aires</p>
+      </div>
+      <div class="d-flex flex-column">
+          <div class="align-self-center mb-3 mt-2">
+              <h6>Medios de pago</h6>
+          </div>
+          <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-money-bill fa-3x p-1"></i>
+              <i class="fa-brands fa-cc-mastercard fa-3x p-1"></i>
+              <i class="fa-brands fa-cc-visa fa-3x p-1"></i>
+              <i class="fa-brands fa-cc-paypal fa-3x p-1"></i>
+              <i class="fa-brands fa-cc-amex fa-3x p-1"></i>
+          </div>
+      </div>
+      <div class="d-flex justify-content-center">
+          <h3>MINDY PETSHOP &reg</h3>
+      </div>
+</footer>
+  <script type="text/javascript">
+    (function () {
+      window["__CF$cv$params"] = {
+        r: "6dba65f33c9c08e9",
+        m: "yQeumFAKEGzYsuzBriC086rUiJ08.TAtAPaRQFFrXvc-1644549174-0-AVQAsiSiQopZZcR7JOJuEdaepjr3sNM0TpOUJAEk8POlCh/ih5Z1XCk8IbhkxttWAFSfEc3nP0ZGCGS2ww98RZACXAm8a7wz7nPGX57431tDwbHzJu1hbFrniJXG+PsqjDdKpj9rTbhf1QLY109Gn87WXqLRNTN0kYsHmAzbyUBQI1NO2ivh1IZjdm7W4ONei2J0W2FKv6DDuO9HqWfM2Ro=",
+        s: [0xed7d1bf738, 0x22d5a35277],
+      };
+    })();
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="../js/carrito.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</html>
+
+

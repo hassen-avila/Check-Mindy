@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contacto - Mindy</title>
+    <!-- <link rel="icon" type="image/jpg" href="./images/logo_Mesa_de_trabajo_1.png"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" type="image/jpg" href="../favicon/favicon.png"/>
+
+</head>
+<body>
+    <header >
+        <div class="d-flex justify-content-between p-3 header-pagesContac">
+          <div class="d-flex">
+            <img src="../images/logo_Mesa_de_trabajo_1.png" style="height: 5rem;" alt="logo">
+          </div>
+          <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                      </a>
+                      <ul class="dropdown-menu dropdown-color" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="../pages/shopToys.html">Juguetes</a></li>
+                        <li><a class="dropdown-item" href="../pages/shopMed.html">Farmacia</a></li>
+                      </ul>
+                    <li class="nav-item">
+                      <a class="nav-link mr" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item" id="favoritos">
+                    </li>
+                    </li>
+                    
+                  </ul>
+              </div>
+            </nav>
+        </div>
+      </header>
+        
+          
+      <div class="contenedorTituloContact d-flex justify-content-center align-items-center flex-column flex-wrap">
+         <h2 class="text-center text-success">¡Contactanos!</h2>
+          <h3 class="text-center">¿Dudas, consultas, preguntas? ¡No dude en contactarnos!</h3>
+      </div>
+    <main class="d-flex flex-column mainContact">
+      <div id="shop" class="container d-flex flex-column justify-content-center align-items-center  gap-4">
+            
+
+            <div class=" d-flex flex-wrap">
+            <div class="container d-flex mb-5 flex-wrap align-items-center justify-content-center">
+                <form class="formContact mt-5 " action="">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                  </div>
+
+                  <div class="mb-3 d-flex flex-column align-content-center">
+                    <label for="exampleFormControlInput1" class="form-label">Indique su mascota:</label>
+                    <div class="d-flex flex-wrap justify-content-center">
+                      <div class="form-check form-check-inline d-flex flex-column flex-wrap ">
+                      <img class="perro_izq" src="https://www.vitalcan.com/wp-content/uploads/2021/06/product-search-dog@2x.png" width="150">
+                      <input type="checkbox" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                      <label class="btn btn-outline-success" for="success-outlined">Perro</label>
+                      </div>
+
+                      <div class="form-check form-check-inline d-flex flex-column flex-wrap">
+                        <img class="perro_izq" src="https://www.vitalcan.com/wp-content/uploads/2021/06/product-search-cat@2x.png" width="150">
+                        <input type="checkbox" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                        <label class="btn btn-outline-success" for="danger-outlined">Gato</label>
+                      </div>
+                      </div>
+                    </div>
+                  
+                
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre de tu mascota</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Raza de tu mascota</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+              
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Telefono:</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="11 2348 4567">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentarios:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+              <div class="d-flex justify-content-center align-items-center">
+                <button type="submit" class="btn btn-outline-success" id="submit" onclick="alert('Gracias por contactarnos. La informacion se envio correctamente.😎')">Enviar</button>
+              </div>
+                </form>
+            </div>
+            
+              
+            <div class="datosMap container-fluid d-flex mb-5 flex-wrap">
+                <div class="col-12  col-xxl-6 d-flex flex-column">
+                    <h3>Podes encontrarnos en:</h3>
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6567.37388171924!2d-58.430384!3d-34.612077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses-419!2sar!4v1654020431709!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+  
+                <div class="col-12 pt-3 col-xxl-6 d-flex flex-column justify-content-center align-items-center ">
+                    <h4>Datos de contacto:</h4>
+                        <i class="fa-solid fa-phone text-success"></i>
+                        <p>11 5883 5408</p>
+                        <i class="fa-solid fa-envelope text-success "></i>
+                        <p>mindy@gmail.com</p>
+                        <i class="fa-solid fa-location-dot text-success"></i>
+                        <p>Rio de Janeiro 300 (Caballito)</p>
+                        <i class="fa-solid fa-clock text-success"></i>
+                        <h6 class="d-flex justify-content-center">Horarios</h6>
+                        <p class="text-center">Lunes a Sabado 9:00 a 13:00 y 15:00 a 20:00</p>
+                        <p class="text-center"><b>Domingos y feriados cerrado</b></p>
+                </div>
+            </div>
+          </div>  
+      </div>
+  
+    </main>
+    
+    <footer class="d-block d-xl-flex justify-content-between p-4 align-items-center">
+      <div class="d-flex justify-content-center">
+        <a class="text-redes" target="_blank" href="https://api.whatsapp.com/send/?phone=3513154171&text&app_absent=0"><i class="fa-brands fa-whatsapp fa-3x p-3"></i></a>
+        <a class="text-redes" target="_blank" href="https://www.instagram.com/mindyspetshop"><i class="fa-brands fa-instagram fa-3x p-3"></i></a>
+        <a class="text-redes" target="_blank" href="https://www.facebook.com/MindyPetShop"><i class="fa-brands fa-facebook fa-3x p-3"></i></a>
+      </div>
+      <div>
+          <h6 class="d-flex justify-content-center">Horarios</h6>
+          <p class="text-center">Lunes a Sabado: 9:00 a 13:00 y 15:00 a 20:00</p>
+          <p class="text-center">Domingos y feriados cerrado</p>
+          <p class="text-center">Rio de Janeiro 300 - Caballito - Buenos Aires</p>
+      </div>
+      <div class="d-flex flex-column">
+          <div class="align-self-center mb-3 mt-2">
+              <h6>Medios de pago</h6> 
+          </div>
+          <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-money-bill fa-3x p-1"></i>
+              <i class="fa-brands fa-cc-mastercard fa-3x p-1"></i>
+              <i class="fa-brands fa-cc-visa fa-3x p-1"></i>
+              <i class="fa-brands fa-cc-paypal fa-3x p-1"></i>
+              <i class="fa-brands fa-cc-amex fa-3x p-1"></i>
+          </div>
+      </div>
+      <div class="d-flex justify-content-center">
+          <h3>MINDY PETSHOP &reg</h3>
+      </div>
+</footer>
+  <script type="text/javascript">
+    (function () {
+      window["__CF$cv$params"] = {
+        r: "6dba65f33c9c08e9",
+        m: "yQeumFAKEGzYsuzBriC086rUiJ08.TAtAPaRQFFrXvc-1644549174-0-AVQAsiSiQopZZcR7JOJuEdaepjr3sNM0TpOUJAEk8POlCh/ih5Z1XCk8IbhkxttWAFSfEc3nP0ZGCGS2ww98RZACXAm8a7wz7nPGX57431tDwbHzJu1hbFrniJXG+PsqjDdKpj9rTbhf1QLY109Gn87WXqLRNTN0kYsHmAzbyUBQI1NO2ivh1IZjdm7W4ONei2J0W2FKv6DDuO9HqWfM2Ro=",
+        s: [0xed7d1bf738, 0x22d5a35277],
+      };
+    })();
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../js/shopToys.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
