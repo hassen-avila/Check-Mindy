@@ -1,1 +1,5 @@
-[# Check-Mindy](https://youtu.be/m7GoofKA2VA)
+[# Check-Mindy]
+
+git@github.com:hassen-avila/Check-Mindy.git
+
+
