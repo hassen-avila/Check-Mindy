@@ -1,0 +1,116 @@
+
+
+/*     let price= arrayMeds.map(e=>e.precio)
+
+// Escuchador de eventos Check OK
+    var checkbox = document.getElementById("-500")
+    console.log(checkbox)
+    checkbox.forEach(check => {check.addEventListener("change", (evento)=>{
+    let checked=evento.target.checked
+    if(checked){
+        dataCheck.push(evento.target.value)
+        //filter()
+    }
+    else{
+        dataCheck = dataCheck.filter(uncheck => uncheck !== evento.target.value)
+        //filter()
+    }
+})}) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* let textSearch=[]
+// Escuchador de eventos OK
+var searchInput =document.querySelector("#search")
+searchInput.addEventListener("keyup", (evento)=>{
+    textSearch= evento.target.value
+    filter()
+    })
+
+    function filter(){
+        let dataEnd = []
+        if (dataCheck.length > 0 && textSearch !== "") {
+            dataCheck.map(event => {
+                dataEnd.push(...arrayMeds.filter(evento => evento.nombre.toLowerCase().includes(textSearch.trim().toLowerCase())  &&
+                    evento.category == event))
+            })
+        }
+        else if (dataCheck.length > 0 && textSearch === "") {
+            dataCheck.map(event => dataEnd.push(...arrayMeds.filter(evento => evento.category == event)))
+        }
+        else if (dataCheck.length == 0 && textSearch !== "") {
+            dataEnd.push(...arrayMeds.filter(evento => evento.nombre.toLowerCase().includes(textSearch.trim().toLowerCase())))
+        }
+        else { dataEnd.push(...arrayMeds) }
+        
+        
+        shopCards(dataEnd)
+        console.log(dataEnd)
+    }
+
+    filter() */
+
+//Funcion de filtro
+
+    // function filter(){
+    //     let precio
+    //     arrayMeds.forEach( e => {
+    //         if(e.precio>0 && e.precio<500){
+    //             arrayMeds.map(evento=>{
+    //                 precio.push(...arrayMeds.filter(e=> e.precio>0 && e.precio<500))})
+    //         } 
+    //         else if(e.precio>500 && e.precio<1000){
+    //             precio= arrayMeds.filter(e=> e.precio>500 && e.precio<1000)
+    //         }
+    //         else{
+    //             precio= arrayMeds.filter(e=> e.precio>1000)
+    //         } 
+    //     })
+    //     shopCards(precio)
+    //     console.log(precio);
+    // } 
+    // filter()
+
+
+// Funcion imprimir template joyita
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
